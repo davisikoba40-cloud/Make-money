@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mobilearn — Watch YouTube. Get Paid. | Powered by Mobilelabs UG</title>
+<meta name="description" content="Sign up with an Airtel Uganda number, activate with UGX 19,500 via Airtel *185*9# Merchant Code 7285061 (MOBILE LABS), watch YouTube videos for UGX 1,900 each, submit verification screenshots via WhatsApp +256747943247, and withdraw from UGX 20,000 to Airtel Money." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231e40af'/%3E%3Cpath d='M4 17l5-6 4 3 5-7 4 4' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f8fafc;
+    --card:#ffffff;
+    --line:#e2e8f0;
+    --line-strong:#cbd5e1;
+    --text:#0f172a;
+    --text-soft:#334155;
+    --muted:#64748b;
+    --primary:#1d4ed8;
+    --primary-deep:#1e3a8a;
+    --accent:#059669;
+    --accent-soft:#d1fae5;
+    --airtel:#e40000;
+    --whatsapp:#25d366;
+    --whatsapp-deep:#128c7e;
+    --grad:linear-gradient(135deg,#1e40af 0%,#0f766e 100%);
+    --radius:14px;
+    --radius-lg:20px;
+    --max:1160px;
+    --shadow-sm:0 1px 2px rgba(15,23,42,.06);
+    --shadow:0 4px 20px rgba(15,23,42,.08);
+    --shadow-lg:0 24px 60px -20px rgba(15,23,42,.18);
+    --mono:'SF Mono',ui-monospace,'Courier New',monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+  input,select,textarea{font:inherit}
+  ::selection{background:rgba(29,78,216,.18)}
+  .container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:24px}
+
+  /* ============ ICONS ============ */
+  .icon{width:1em;height:1em;flex:none;display:inline-block;vertical-align:-.125em;fill:currentColor}
+  .icon-sm{width:.85em;height:.85em}
+  .icon-lg{width:1.25em;height:1.25em}
+
+  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .section{padding:clamp(56px,8vw,96px) 0;position:relative}
+  .section-head{max-width:600px;margin:0 auto clamp(34px,5vw,48px);text-align:center}
+  .section-head h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;letter-spacing:-.025em;margin:12px 0 10px;font-weight:800;color:var(--text)}
+  .section-head p{color:var(--muted);font-size:1rem}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 26px;border-radius:10px;font-weight:600;font-size:.95rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease;white-space:nowrap}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 20px -6px rgba(30,64,175,.4)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 28px -8px rgba(30,64,175,.5)}
+  .btn-ghost{border:1px solid var(--line-strong);color:var(--text);background:#fff}
+  .btn-ghost:hover{background:var(--bg-soft);border-color:#94a3b8;transform:translateY(-1px)}
+  .btn-wa{background:var(--whatsapp);color:#fff;box-shadow:0 8px 20px -6px rgba(37,211,102,.45)}
+  .btn-wa:hover{background:#1ebe5a;transform:translateY(-1px);box-shadow:0 14px 28px -8px rgba(37,211,102,.55)}
+  .btn-block{width:100%}
+
+  /* ============ AIRTEL LOGO ============ */
+  .airtel-logo{display:inline-flex;align-items:center;gap:8px;vertical-align:middle}
+  .airtel-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--airtel);color:#fff;
+    padding:5px 12px 5px 9px;border-radius:999px;
+    font-weight:800;font-size:.78rem;letter-spacing:-.01em;
+    line-height:1.1;text-transform:lowercase;
+    box-shadow:0 6px 14px -6px rgba(228,0,0,.55);
+    white-space:nowrap;
+  }
+  .airtel-badge .icon{width:15px;height:15px;fill:none;stroke:currentColor}
+  .airtel-badge .word{letter-spacing:-.02em;font-size:.92em}
+
+  /* ============ NAV ============ */
+  .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:border-color .3s ease,box-shadow .3s ease}
+  .nav.scrolled{border-bottom-color:var(--line);box-shadow:0 1px 12px rgba(15,23,42,.04)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;color:var(--text)}
+  .logo-mark{width:36px;height:36px;border-radius:10px;background:var(--grad);display:grid;place-items:center;color:#fff;flex:none;box-shadow:0 6px 16px -6px rgba(30,64,175,.5)}
+  .logo-mark .icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.4}
+  .nav-links{display:flex;align-items:center;gap:26px}
+  .nav-links a{font-size:.92rem;color:var(--muted);font-weight:500;transition:color .2s;position:relative;padding:4px 0;display:inline-flex;align-items:center;gap:6px}
+  .nav-links a:hover{color:var(--text)}
+  .nav-links a.active{color:var(--primary);font-weight:700}
+  .nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--grad)}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .nav-cta .btn{padding:10px 20px;font-size:.9rem}
+  .burger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);place-items:center;background:#fff}
+  .burger .icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2}
+  .burger .icon-close{display:none}
+  .burger[aria-expanded="true"] .icon-menu{display:none}
+  .burger[aria-expanded="true"] .icon-close{display:block}
+  .mobile-menu{display:none;flex-direction:column;gap:4px;padding:12px 24px 22px;border-top:1px solid var(--line);background:#fff}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{padding:12px 4px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}
+  .mobile-menu a:hover{color:var(--text)}
+  .mobile-menu a.active{color:var(--primary);font-weight:700}
+  .mobile-menu .btn{margin-top:14px;border-bottom:none}
+
+  /* ============ PAGES ============ */
+  .page{display:none}
+  .page.active{display:block;animation:pageIn .35s cubic-bezier(.22,1,.36,1)}
+  @keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  .page-head{max-width:680px;margin-inline:auto;text-align:center;padding-top:clamp(36px,6vw,60px)}
+  .page-head h1{font-size:clamp(2rem,4.4vw,3rem);line-height:1.1;letter-spacing:-.03em;font-weight:800;margin:14px 0 12px;color:var(--text)}
+  .page-head p{color:var(--muted);font-size:1.02rem}
+
+  /* ============ HERO ============ */
+  .hero{position:relative;overflow:hidden;padding:clamp(40px,6vw,80px) 0 clamp(48px,7vw,90px);background:#fff}
+  .glow{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none;z-index:0}
+  .glow-1{width:560px;height:560px;background:rgba(30,64,175,.09);top:-240px;left:-160px}
+  .glow-2{width:520px;height:520px;background:rgba(13,148,136,.08);top:-140px;right:-180px}
+  .glow-3{width:600px;height:600px;background:rgba(30,64,175,.04);bottom:-380px;left:35%}
+  .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,64px);align-items:center}
+  .hero h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.06;letter-spacing:-.035em;font-weight:800;margin:20px 0 16px;color:var(--text)}
+  .hero-sub{color:var(--muted);font-size:clamp(1rem,1.6vw,1.1rem);max-width:500px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+  .hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;font-size:.85rem;color:var(--muted)}
+  .hero-trust span{display:inline-flex;align-items:center;gap:7px}
+  .check{width:18px;height:18px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none;font-style:normal}
+  .check .icon{width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:3}
+  .pill{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 8px;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);font-size:.82rem;color:var(--muted);font-weight:500}
+  .pill b{color:var(--text)}
+  .pill-dot{width:22px;height:22px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#fff;flex:none}
+  .pill-dot .icon{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.4}
+  .pill-live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(5,150,105,.5);animation:pulse 2s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(5,150,105,0)}100%{box-shadow:0 0 0 0 rgba(5,150,105,0)}}
+
+  /* ============ PHONE ============ */
+  .phone-wrap{display:flex;justify-content:center;position:relative}
+  .phone{position:relative;width:min(300px,86vw);aspect-ratio:9/18.6;border-radius:40px;padding:9px;background:linear-gradient(160deg,#1e293b,#0f172a 55%);border:1px solid #334155;box-shadow:0 40px 80px -30px rgba(15,23,42,.35);transform:rotate(-3deg);animation:float 7s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-14px)}}
+  .phone-screen{position:relative;height:100%;border-radius:32px;overflow:hidden;background:radial-gradient(120% 80% at 50% 0%,#1e293b 0%,#0f172a 60%);display:flex;flex-direction:column;padding:22px 16px 16px;gap:12px}
+  .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:74px;height:16px;border-radius:999px;background:#020617}
+  .ph-head{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+  .ph-avatar{width:30px;height:30px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-size:.72rem;font-weight:800;color:#fff}
+  .ph-hi{font-size:.7rem;color:#94a3b8;line-height:1.3}
+  .ph-hi b{display:block;color:#f1f5f9;font-size:.82rem}
+  .ph-balance{background:linear-gradient(135deg,rgba(29,78,216,.35),rgba(13,148,136,.2));border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px}
+  .ph-balance small{font-size:.65rem;color:#cbd5e1;letter-spacing:.06em;text-transform:uppercase}
+  .ph-balance .amt{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin-top:2px;color:#fff}
+  .ph-balance .chg{font-size:.66rem;color:#34d399;margin-top:2px;display:flex;align-items:center;gap:4px}
+  .ph-chart{display:flex;align-items:flex-end;gap:6px;height:46px;margin-top:8px}
+  .ph-chart i{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,#34d399,rgba(29,78,216,.6));opacity:.9}
+  .ph-label{font-size:.68rem;color:#94a3b8;letter-spacing:.07em;text-transform:uppercase;margin-top:2px}
+  .ph-task{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:9px 11px}
+  .ph-task .ic{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;flex:none;background:rgba(239,68,68,.28);color:#fca5a5}
+  .ph-task .ic .icon{width:12px;height:12px}
+  .ph-task .tx{flex:1;min-width:0}
+  .ph-task .tx b{display:block;font-size:.72rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#f1f5f9}
+  .ph-task .tx small{font-size:.6rem;color:#94a3b8}
+  .ph-task .pay{font-size:.7rem;font-weight:800;color:#34d399}
+  .ph-bar{margin-top:auto;display:flex;justify-content:space-around;padding-top:10px;border-top:1px solid rgba(255,255,255,.08);font-size:.58rem;color:#94a3b8;text-align:center}
+  .ph-bar div.active{color:#34d399}
+
+  /* ============ STRIP ============ */
+  .strip{border-block:1px solid var(--line);background:var(--bg-soft)}
+  .strip-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 0;text-align:center}
+  .strip-num{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-.03em}
+  .strip-lbl{font-size:.8rem;color:var(--muted);margin-top:2px}
+
+  /* ============ CARDS ============ */
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;position:relative}
+  .card:hover{transform:translateY(-3px);border-color:#93c5fd;box-shadow:var(--shadow)}
+  .card h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;margin-bottom:6px;color:var(--text);display:flex;align-items:center;gap:8px}
+  .card p{color:var(--muted);font-size:.9rem;line-height:1.55}
+  .step-num{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;margin-bottom:16px;font-weight:800;font-size:.95rem;color:#fff;background:var(--grad);box-shadow:0 8px 18px -8px rgba(30,64,175,.5)}
+  .step-num .icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2}
+  .tick{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent-soft);color:var(--accent);flex:none;margin-top:2px;font-style:normal}
+  .tick .icon{width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:3}
+
+  .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(22px,3.5vw,34px);box-shadow:var(--shadow-sm)}
+  .panel h3{font-size:1.05rem;font-weight:700;margin-bottom:10px;color:var(--text);display:flex;align-items:center;gap:8px}
+  .panel > p{color:var(--muted);font-size:.93rem}
+  .list{list-style:none;display:grid;gap:12px;margin-top:14px}
+  .list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:.92rem}
+  .list li b{color:var(--text);font-weight:700}
+  .panel-accent{background:linear-gradient(150deg,#eff6ff,#ecfdf5);border-color:#bfdbfe}
+
+  .home-cta{text-align:center;background:var(--bg-soft);border:1px solid var(--line);border-radius:28px;padding:clamp(32px,5vw,56px);box-shadow:var(--shadow-sm)}
+  .home-cta h2{font-size:clamp(1.5rem,3.4vw,2.2rem);letter-spacing:-.02em;font-weight:800;margin-bottom:10px}
+  .home-cta p{color:var(--muted);margin-bottom:24px}
+  .home-cta .hero-actions{justify-content:center;margin-top:0}
+
+  .auth-wrap{max-width:440px;margin:0 auto;width:100%}
+  .auth-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(26px,4vw,40px);box-shadow:var(--shadow-lg)}
+  .auth-card h1{font-size:1.55rem;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+  .auth-card .sub{color:var(--muted);font-size:.92rem;margin-bottom:24px}
+  .form-stack{display:flex;flex-direction:column;gap:12px}
+  .form-stack input{width:100%;padding:14px 18px;border-radius:10px;border:1px solid var(--line-strong);background:#fff;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s}
+  .form-stack input::placeholder{color:#94a3b8}
+  .form-stack input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+  .form-stack .btn{margin-top:6px;border-radius:10px}
+  .auth-msg{font-size:.86rem;margin-top:14px;min-height:20px;font-weight:600;color:var(--accent)}
+  .auth-msg.err{color:#dc2626}
+  .auth-alt{margin-top:18px;font-size:.88rem;color:var(--muted);text-align:center}
+  .auth-alt a{color:var(--primary);font-weight:700}
+  .auth-alt a:hover{text-decoration:underline}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:22px;align-items:start}
+  .contact-item{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+  .contact-item:last-child{border-bottom:none}
+  .contact-item .ic{width:40px;height:40px;border-radius:10px;background:#eff6ff;color:var(--primary);display:grid;place-items:center;flex:none}
+  .contact-item .ic .icon{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}
+  .contact-item b{display:block;font-size:.9rem;color:var(--text)}
+  .contact-item span{font-size:.88rem;color:var(--muted);display:block;margin-top:4px}
+  .form-stack textarea{width:100%;min-height:120px;padding:14px 18px;border-radius:10px;border:1px solid var(--line-strong);background:#fff;color:var(--text);outline:none;resize:vertical;transition:border-color .2s,box-shadow .2s}
+  .form-stack textarea::placeholder{color:#94a3b8}
+  .form-stack textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+
+  .legal-block{padding:26px 0;border-bottom:1px solid var(--line)}
+  .legal-block:last-child{border-bottom:none}
+  .legal-block h2{font-size:1.15rem;font-weight:800;letter-spacing:-.01em;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .legal-block p{color:var(--muted);font-size:.93rem}
+
+  .code-inline{
+    font-family:var(--mono);letter-spacing:.08em;background:#eff6ff;color:var(--primary-deep);
+    padding:2px 9px;border-radius:5px;border:1px solid #bfdbfe;font-weight:800;
+    display:inline-block;font-size:.95em;white-space:nowrap;
+  }
+  .code-copy{
+    padding:7px 13px;border-radius:7px;background:#fff;color:#b91c1c;
+    font-weight:800;font-size:.74rem;letter-spacing:.02em;
+    transition:transform .15s ease,background .15s ease;flex:none;
+    display:inline-flex;align-items:center;gap:5px;
+  }
+  .code-copy .icon{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.4}
+  .code-copy:hover{transform:translateY(-1px);background:#fef2f2}
+  .code-copy:active{transform:scale(.96)}
+  .code-copy.copied{background:#bbf7d0;color:#166534}
+
+  .pay-steps{display:grid;gap:10px;margin-top:14px}
+  .pay-step{
+    display:flex;gap:12px;align-items:flex-start;
+    background:#fff;border:1px solid var(--line);border-radius:11px;padding:12px 14px;
+    transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+  }
+  .pay-step:hover{border-color:#93c5fd;box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+  .pay-step-num{
+    width:27px;height:27px;border-radius:50%;flex:none;
+    background:var(--grad);color:#fff;font-weight:800;font-size:.78rem;
+    display:grid;place-items:center;
+    box-shadow:0 6px 14px -6px rgba(30,64,175,.5);
+  }
+  .pay-step b{display:block;font-size:.9rem;color:var(--text);line-height:1.35;font-weight:700}
+  .pay-step .desc{display:block;font-size:.8rem;color:var(--muted);margin-top:2px}
+  .pay-step code{
+    font-family:var(--mono);background:#eff6ff;color:var(--primary-deep);
+    padding:1px 7px;border-radius:4px;font-weight:800;letter-spacing:.06em;
+    border:1px solid #bfdbfe;font-size:.88em;
+  }
+
+  .pay-note-title{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.8);margin-bottom:12px;
+  }
+
+  /* ================================================================
+     SIGNUP
+  ================================================================ */
+  .signup{
+    position:relative;
+    padding:clamp(40px,6vw,72px) 0 clamp(56px,8vw,96px);
+    background:
+      radial-gradient(60% 50% at 100% 0%, rgba(13,148,136,.06), transparent 60%),
+      radial-gradient(55% 50% at 0% 100%, rgba(30,64,175,.06), transparent 60%),
+      #fff;
+  }
+  .signup-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:clamp(24px,4vw,40px);
+    align-items:start;
+    max-width:1040px;
+    margin-inline:auto;
+  }
+  .signup-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:clamp(28px,4vw,44px);
+    box-shadow:0 24px 60px -28px rgba(15,23,42,.18);
+  }
+  .signup-card-head{margin-bottom:26px}
+  .signup-card-head .eyebrow{color:var(--primary);margin-bottom:10px}
+  .signup-card-head h1{
+    font-size:clamp(1.5rem,2.6vw,1.9rem);
+    letter-spacing:-.025em;font-weight:800;
+    color:var(--text);line-height:1.15;margin-bottom:8px;
+  }
+  .signup-card-head p{color:var(--muted);font-size:.94rem}
+
+  .signup-form{display:flex;flex-direction:column;gap:16px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-size:.78rem;font-weight:800;color:var(--text-soft);letter-spacing:.02em}
+  .field input{
+    width:100%;padding:13px 16px;border-radius:10px;
+    border:1px solid var(--line-strong);background:#fff;color:var(--text);
+    outline:none;transition:border-color .2s,box-shadow .2s;
+  }
+  .field input::placeholder{color:#94a3b8}
+  .field input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .signup-form .btn{margin-top:6px}
+
+  .signup-card .form-msg{font-size:.86rem;margin-top:14px;min-height:20px;font-weight:600;color:var(--accent);line-height:1.5}
+  .signup-card .form-msg.err{color:#dc2626}
+
+  .signup-alt{margin-top:20px;font-size:.88rem;color:var(--muted);text-align:center}
+  .signup-alt a{color:var(--primary);font-weight:700}
+  .signup-alt a:hover{text-decoration:underline}
+
+  .signup-foot{
+    margin-top:20px;padding-top:16px;border-top:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    font-size:.78rem;color:var(--muted);font-weight:600;
+  }
+  .signup-foot .icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;color:var(--accent)}
+
+  .signup-aside{
+    background:linear-gradient(160deg,#0f172a,#1e293b);
+    border-radius:22px;padding:clamp(26px,3.5vw,38px);
+    color:#fff;position:relative;overflow:hidden;
+    box-shadow:0 24px 60px -28px rgba(15,23,42,.4);
+  }
+  .signup-aside::before{
+    content:"";position:absolute;top:-30%;right:-15%;width:60%;aspect-ratio:1;
+    background:radial-gradient(circle, rgba(13,148,136,.35), transparent 70%);
+    pointer-events:none;
+  }
+  .signup-aside::after{
+    content:"";position:absolute;bottom:-30%;left:-15%;width:55%;aspect-ratio:1;
+    background:radial-gradient(circle, rgba(29,78,216,.3), transparent 70%);
+    pointer-events:none;
+  }
+  .aside-head{position:relative;z-index:1;margin-bottom:20px}
+  .aside-head h3{font-size:1.15rem;font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+  .aside-head p{font-size:.86rem;color:rgba(255,255,255,.7)}
+  .aside-airtel{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:#fca5a5;margin-bottom:10px;
+  }
+  .aside-airtel .icon{width:14px;height:14px;fill:none;stroke:currentColor}
+
+  .fee-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;position:relative;z-index:1}
+  .fee-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 14px}
+  .fee-item span{display:block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:800;margin-bottom:3px}
+  .fee-item b{font-size:1rem;font-weight:800;color:#fff;letter-spacing:.01em}
+
+  .merchant-box{
+    position:relative;z-index:1;
+    display:flex;align-items:center;gap:12px;
+    background:rgba(0,0,0,.35);border:1px dashed rgba(255,255,255,.3);
+    border-radius:12px;padding:11px 14px;margin-bottom:18px;
+  }
+  .merchant-box .mb-label{
+    font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(255,255,255,.55);font-weight:800;flex:none;line-height:1.2;
+  }
+  .merchant-box .mb-value{
+    flex:1;font-family:var(--mono);font-size:1.25rem;font-weight:800;
+    letter-spacing:.18em;color:#fff;text-align:center;
+  }
+  .merchant-box .mb-copy{
+    flex:none;padding:6px 12px;border-radius:7px;background:#fff;color:#0f172a;
+    font-weight:800;font-size:.72rem;display:inline-flex;align-items:center;gap:5px;
+    transition:transform .15s,background .15s;
+  }
+  .merchant-box .mb-copy .icon{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.4}
+  .merchant-box .mb-copy:hover{background:#f1f5f9;transform:translateY(-1px)}
+  .merchant-box .mb-copy.copied{background:#bbf7d0;color:#166534}
+
+  .aside-steps{position:relative;z-index:1;list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+  .aside-steps li{display:flex;gap:11px;align-items:flex-start;font-size:.86rem;color:rgba(255,255,255,.82);line-height:1.4}
+  .aside-steps li b{color:#fff;font-weight:700}
+  .aside-steps .step-n{
+    flex:none;width:22px;height:22px;border-radius:50%;
+    background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+    display:grid;place-items:center;font-size:.66rem;font-weight:800;color:#fff;
+  }
+
+  .aside-wa{
+    position:relative;z-index:1;
+    display:flex;align-items:center;gap:11px;flex-wrap:wrap;
+    background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.35);
+    border-radius:12px;padding:12px 14px;
+  }
+  .aside-wa .wa-ic{width:32px;height:32px;border-radius:8px;background:var(--whatsapp);color:#fff;display:grid;place-items:center;flex:none}
+  .aside-wa .wa-ic .icon{width:16px;height:16px}
+  .aside-wa p{flex:1;font-size:.8rem;line-height:1.45;color:rgba(255,255,255,.85);min-width:140px}
+  .aside-wa p b{color:#fff;font-weight:800;font-family:var(--mono);letter-spacing:.01em}
+
+  @media (max-width:900px){ .signup-grid{grid-template-columns:1fr} }
+  @media (max-width:520px){ .field-row{grid-template-columns:1fr} .fee-grid{grid-template-columns:1fr} }
+
+  /* ================================================================
+     DASHBOARD
+  ================================================================ */
+  .dash-container{max-width:760px;padding-bottom:clamp(100px,14vw,140px)}
+
+  .dash-head{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    padding-top:clamp(32px,5vw,52px);padding-bottom:clamp(22px,3.5vw,32px);
+  }
+  .dash-head h1{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:800;letter-spacing:-.025em;margin:8px 0 6px;color:var(--text)}
+  .dash-head p{color:var(--muted);font-size:.94rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .status-active{
+    display:inline-flex;align-items:center;gap:7px;
+    background:var(--accent-soft);color:#065f46;
+    padding:3px 11px;border-radius:999px;font-weight:800;font-size:.78rem;
+  }
+  .status-active::before{
+    content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 3px rgba(5,150,105,.2);animation:pulse 2s infinite;
+  }
+  .status-pending{background:#fef3c7;color:#92400e}
+  .status-pending::before{background:#f59e0b;box-shadow:0 0 0 3px rgba(245,158,11,.2)}
+
+  .dash-balance-card{
+    position:relative;overflow:hidden;border-radius:26px;
+    padding:clamp(24px,4vw,36px);color:#fff;
+    background:
+      radial-gradient(130% 140% at 0% 0%, rgba(255,255,255,.22), transparent 55%),
+      radial-gradient(120% 130% at 100% 100%, rgba(4,120,87,.85), transparent 60%),
+      linear-gradient(150deg,#1e40af,#0f766e);
+    box-shadow:0 30px 70px -30px rgba(30,64,175,.55);
+  }
+  .dash-live{
+    display:inline-flex;align-items:center;gap:7px;
+    background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25);
+    padding:5px 12px;border-radius:999px;
+    font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  }
+  .dash-live i{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pulse 2s infinite}
+  .dash-balance-card small{display:block;margin-top:16px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);font-weight:800}
+  .dash-balance{
+    font-size:clamp(2rem,6vw,3rem);font-weight:800;letter-spacing:-.03em;
+    line-height:1.05;margin:6px 0 6px;font-variant-numeric:tabular-nums;
+    word-break:break-word;
+  }
+  .dash-balance-sub{font-size:.85rem;color:#bbf7d0;font-weight:700;display:flex;align-items:center;gap:6px}
+  .dash-balance-sub .icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.6}
+
+  .dash-balance-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:1}
+  .dash-withdraw-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 20px;border-radius:10px;
+    background:#fff;color:var(--primary-deep);
+    font-weight:800;font-size:.88rem;
+    box-shadow:0 12px 26px -12px rgba(0,0,0,.45);
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .dash-withdraw-btn .icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2}
+  .dash-withdraw-btn:hover{transform:translateY(-1px);box-shadow:0 18px 34px -14px rgba(0,0,0,.5)}
+  .dash-withdraw-btn:active{transform:scale(.98)}
+
+  .dash-panel{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:clamp(22px,3.5vw,30px);box-shadow:var(--shadow-sm);
+  }
+  .dash-panel h3{font-size:1.05rem;font-weight:800;margin-bottom:4px;color:var(--text);display:flex;align-items:center;gap:8px}
+  .dash-panel h3 .icon{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;color:var(--primary)}
+  .dash-panel .sub{color:var(--muted);font-size:.86rem;margin-bottom:16px}
+
+  /* ============ WATCH & EARN ============ */
+  .video-panel .video-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+  .video-panel .video-head h3{margin-bottom:2px}
+  .video-panel .video-head .sub{margin-bottom:0}
+  .video-reward{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--accent-soft);color:#065f46;
+    padding:5px 12px;border-radius:999px;font-weight:800;font-size:.8rem;
+    white-space:nowrap;flex:none;border:1px solid #a7f3d0;
+  }
+  .video-reward .icon{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.4}
+  .video-reward.earned{background:#fef3c7;color:#92400e;border-color:#fde68a}
+  .video-frame{
+    position:relative;width:100%;aspect-ratio:16/9;
+    background:#0f172a;border-radius:14px;overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .video-frame > div,.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video-frame .placeholder{
+    position:absolute;inset:0;display:grid;place-items:center;
+    color:rgba(255,255,255,.7);font-size:.88rem;font-weight:600;text-align:center;padding:20px;
+  }
+  .video-status{
+    margin-top:12px;font-size:.85rem;font-weight:700;
+    padding:9px 14px;border-radius:10px;
+    background:var(--bg-soft);border:1px solid var(--line);color:var(--text-soft);
+    display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  }
+  .video-status .icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;flex:none}
+  .video-status.playing{background:#eff6ff;border-color:#bfdbfe;color:var(--primary-deep)}
+  .video-status.paused{background:#fef3c7;border-color:#fde68a;color:#92400e}
+  .video-status.earned{background:var(--accent-soft);border-color:#a7f3d0;color:#065f46}
+
+  .video-progress{display:none;margin-top:10px;height:7px;border-radius:999px;background:var(--line);overflow:hidden}
+  .video-progress.on{display:block}
+  .video-progress i{display:block;height:100%;width:0;border-radius:999px;background:var(--grad);transition:width .4s linear}
+  .video-guard{
+    display:flex;align-items:flex-start;gap:7px;
+    font-size:.78rem;color:var(--muted);margin-top:10px;line-height:1.45;
+  }
+  .video-guard .icon{width:14px;height:14px;flex:none;margin-top:2px;fill:none;stroke:currentColor;stroke-width:2.2;color:var(--accent)}
+
+  /* ============ VIDEO LIST ============ */
+  .video-list{display:grid;gap:12px}
+  .video-card{
+    display:flex;gap:14px;align-items:center;
+    padding:12px;border:1px solid var(--line);border-radius:14px;
+    background:#fff;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+  }
+  .video-card:hover{border-color:#93c5fd;box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+  .video-card .thumb-wrap{
+    position:relative;flex:none;width:132px;aspect-ratio:16/9;
+    border-radius:10px;overflow:hidden;background:#0f172a;
+  }
+  .video-card .thumb{width:100%;height:100%;object-fit:cover;display:block}
+  .video-card .thumb-wrap::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(15,23,42,0) 45%,rgba(15,23,42,.5));
+    pointer-events:none;
+  }
+  .video-card .meta{flex:1;min-width:0}
+  .video-card .meta b{display:block;font-size:.92rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .video-card .meta small{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);margin-top:4px}
+  .video-card .meta .reward{color:var(--accent);font-weight:800}
+  .video-card .actions{flex:none;display:flex;gap:6px;align-items:center}
+  .video-card.watching{border-color:var(--accent);background:#f0fdf4;box-shadow:0 0 0 3px rgba(5,150,105,.1)}
+  .video-card.earned{background:#fafafa}
+  .video-card.earned .thumb{filter:grayscale(.6);opacity:.85}
+
+  .watch-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:7px;
+    padding:10px 18px;border-radius:9px;
+    background:var(--grad);color:#fff;
+    font-weight:700;font-size:.82rem;white-space:nowrap;
+    box-shadow:0 8px 18px -8px rgba(30,64,175,.6);
+    transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease;
+  }
+  .watch-btn .icon{width:14px;height:14px;fill:currentColor;stroke:none}
+  .watch-btn:hover{transform:translateY(-1px);box-shadow:0 14px 26px -10px rgba(30,64,175,.7)}
+  .watch-btn:active{transform:scale(.97)}
+  .watch-btn.playing{background:#fff;color:var(--primary);border:1px solid #bfdbfe;box-shadow:none}
+  .watch-btn.earned{background:var(--accent-soft);color:#065f46;border:1px solid #a7f3d0;box-shadow:none}
+  .watch-btn.earned .icon{fill:none;stroke:currentColor;stroke-width:3}
+
+  /* ============ MERCHANT CARD ============ */
+  .merchant-section{margin-top:22px}
+
+  /* ============ WHATSAPP BOX ============ */
+  .wa-box{
+    margin-top:16px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    background:linear-gradient(135deg,rgba(37,211,102,.08),rgba(18,140,126,.06));
+    border:1px solid rgba(37,211,102,.35);
+    border-radius:14px;padding:16px;
+  }
+  .wa-box .wa-ic{
+    width:44px;height:44px;border-radius:12px;flex:none;
+    background:var(--whatsapp);color:#fff;display:grid;place-items:center;
+    box-shadow:0 8px 18px -8px rgba(37,211,102,.6);
+  }
+  .wa-box .wa-ic .icon{width:22px;height:22px}
+  .wa-box .wa-tx{flex:1;min-width:180px}
+  .wa-box .wa-tx b{display:block;font-size:.92rem;font-weight:800;color:var(--text)}
+  .wa-box .wa-tx small{display:block;font-size:.82rem;color:var(--muted);margin-top:2px}
+  .wa-box .wa-tx code{font-family:var(--mono);font-weight:800;color:var(--whatsapp-deep);letter-spacing:.02em}
+  .wa-box .btn{flex:none}
+  .wa-box.wa-box-compact{padding:12px 14px}
+  .wa-box.wa-box-compact .wa-ic{width:36px;height:36px;border-radius:10px}
+  .wa-box.wa-box-compact .wa-ic .icon{width:18px;height:18px}
+  .wa-box.wa-box-compact .wa-tx b{font-size:.85rem}
+  .wa-box.wa-box-compact .wa-tx small{font-size:.76rem}
+  .wa-box.wa-box-compact .btn{padding:9px 16px;font-size:.84rem}
+
+  /* ============ WITHDRAW FAB ============ */
+  .withdraw-fab{
+    position:fixed;bottom:22px;right:22px;z-index:90;
+    display:inline-flex;align-items:center;gap:9px;
+    padding:13px 22px 13px 18px;border-radius:999px;
+    background:var(--grad);color:#fff;font-weight:800;font-size:.9rem;
+    box-shadow:0 14px 32px -12px rgba(30,64,175,.65);
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .withdraw-fab .icon{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.2}
+  .withdraw-fab:hover{transform:translateY(-2px);box-shadow:0 20px 40px -14px rgba(30,64,175,.75)}
+  .withdraw-fab:active{transform:scale(.97)}
+
+  /* ============ WITHDRAW BUBBLE ============ */
+  .withdraw-overlay{
+    position:fixed;inset:0;z-index:150;display:none;
+    align-items:center;justify-content:center;padding:20px;
+    background:rgba(15,23,42,.45);
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  }
+  .withdraw-overlay.open{display:flex;animation:overlayIn .25s ease}
+  @keyframes overlayIn{from{opacity:0}to{opacity:1}}
+
+  .withdraw-bubble{
+    position:relative;background:#fff;border-radius:26px;
+    padding:34px 26px 24px;max-width:420px;width:100%;
+    border:1px solid #bfdbfe;
+    box-shadow:0 40px 100px -30px rgba(29,78,216,.6);
+    animation:bubblePop .3s cubic-bezier(.22,1,.36,1);
+    overflow:hidden;max-height:92vh;overflow-y:auto;
+  }
+  @keyframes bubblePop{
+    from{transform:translateY(18px) scale(.97);opacity:0}
+    to{transform:translateY(0) scale(1);opacity:1}
+  }
+  .bubble-deco{
+    position:absolute;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, rgba(59,130,246,.22), rgba(59,130,246,.02));
+    pointer-events:none;opacity:.8;
+  }
+  .bubble-close{
+    position:absolute;top:14px;right:16px;width:32px;height:32px;
+    border-radius:50%;background:#f1f5f9;color:var(--text-soft);
+    display:grid;place-items:center;font-size:1rem;font-weight:800;
+    transition:background .2s,color .2s;z-index:2;
+  }
+  .bubble-close:hover{background:#e2e8f0;color:var(--text)}
+  .bubble-head{text-align:center;margin-bottom:20px;position:relative;z-index:1}
+  .bubble-icon{
+    width:56px;height:56px;margin:0 auto 12px;border-radius:16px;
+    background:var(--grad);color:#fff;display:grid;place-items:center;
+    box-shadow:0 12px 28px -8px rgba(30,64,175,.6);
+  }
+  .bubble-icon .icon{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2.2}
+  .bubble-head h3{font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:4px}
+  .bubble-head p{font-size:.85rem;color:var(--muted)}
+  .bubble-note{
+    position:relative;z-index:1;margin-top:14px;font-size:.78rem;color:var(--muted);
+    display:flex;align-items:center;gap:7px;padding:10px 12px;
+    background:var(--bg-soft);border-radius:10px;border:1px solid var(--line);
+  }
+  .bubble-note .icon{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;flex:none;color:var(--primary)}
+
+  .wd-label{display:block;font-size:.78rem;font-weight:800;color:var(--text-soft);margin-bottom:6px;letter-spacing:.01em;position:relative;z-index:1}
+  .wd-input{
+    width:100%;padding:13px 16px;border-radius:10px;
+    border:1px solid var(--line-strong);background:#fff;color:var(--text);
+    outline:none;margin-bottom:14px;position:relative;z-index:1;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .wd-input::placeholder{color:#94a3b8}
+  .wd-input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+
+  .wd-method{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:12px 14px;margin-bottom:14px;position:relative;z-index:1;
+    background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
+  }
+  .wd-method > span{font-size:.78rem;font-weight:800;color:var(--text-soft)}
+  .wd-method .airtel-badge{transform:scale(.88);transform-origin:right center}
+
+  /* ================================================================
+     SHARED BADGE / EMPTY STATE
+  ================================================================ */
+  .badge{
+    display:inline-flex;align-items:center;gap:5px;
+    padding:3px 9px;border-radius:999px;font-size:.7rem;font-weight:800;white-space:nowrap;
+  }
+  .badge-new{background:#dbeafe;color:#1e40af}
+
+  .empty-state{
+    padding:28px 20px;text-align:center;color:var(--muted);font-size:.9rem;
+    border:1px dashed var(--line-strong);border-radius:12px;background:var(--bg-soft);
+  }
+
+  /* ============ FOOTER ============ */
+  footer{border-top:1px solid var(--line);padding:52px 0 30px;background:var(--bg-soft)}
+  .foot-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:36px}
+  .foot-brand p{color:var(--muted);font-size:.88rem;margin-top:14px;max-width:280px}
+  .foot-col h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--text);margin-bottom:16px;font-weight:700}
+  .foot-col a{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:.88rem;padding:6px 0;transition:color .2s}
+  .foot-col a:hover{color:var(--primary)}
+  .foot-col a .icon{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.4;opacity:.7}
+  .foot-bottom{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
+  .foot-bottom .powered{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--text-soft)}
+  .foot-bottom .powered b{color:var(--primary);font-weight:800}
+  .socials{display:flex;gap:10px}
+  .socials a{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;color:var(--muted);transition:.2s}
+  .socials a:hover{color:var(--primary);border-color:#93c5fd;background:#eff6ff}
+  .socials a .icon{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+  .socials a .icon-fill{fill:currentColor;stroke:none}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .phone{animation:none}
+    .page.active{animation:none}
+    .bubble-deco{animation:none}
+    .withdraw-bubble{animation:none}
+    html{scroll-behavior:auto}
+  }
+
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:48px}
+    .hero-sub{max-width:none}
+    .phone-wrap{order:2}
+    .contact-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+    .foot-brand{grid-column:1/-1}
+  }
+  @media (max-width:820px){
+    .nav-links,.nav-cta .btn-ghost{display:none}
+    .burger{display:grid}
+    .strip-inner{grid-template-columns:1fr 1fr;gap:26px}
+  }
+  @media (max-width:600px){
+    .container{padding-inline:18px}
+    .hero-actions{flex-direction:column;align-items:stretch}
+    .hero-actions .btn{width:100%}
+    .foot-grid{grid-template-columns:1fr}
+    .foot-bottom{flex-direction:column;align-items:flex-start}
+    .wa-box .btn{width:100%}
+    .withdraw-fab{bottom:16px;right:16px;padding:12px 18px 12px 15px;font-size:.85rem}
+    .video-card .thumb-wrap{width:96px}
+  }
+  @media (max-width:420px){
+    .video-card{flex-wrap:wrap}
+    .video-card .actions{width:100%}
+    .watch-btn{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     ICON SPRITE
+================================================================ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 10 6-4v12l-6-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21v-1a7 7 0 0 1 7-7h2a7 7 0 0 1 7 7v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-user-plus" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2 21v-1a7 7 0 0 1 7-7h0a7 7 0 0 1 7 7v1M19 8v6M22 11h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-log-in" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-log-out" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M9 21V9" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 16v-4M12 8h.01" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m2 7 10 6 10-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-trending" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M21 7v6h-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2.1-.3 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.4 3 1.2 3 1 3.5.9.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.4-.2M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z" fill="currentColor"/></symbol>
+  <symbol id="i-twitter" viewBox="0 0 24 24"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.8l7.5-8.6L2.4 2h6.6l4.5 6.6L18.9 2zm-1.1 18h1.7L7.3 3.8H5.5L17.8 20z" fill="currentColor"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.17a3 3 0 0 0-2.11-2.12C18.77 4.25 12 4.25 12 4.25s-6.77 0-8.44.46A3 3 0 0 0 1.45 6.8C1 8.5 1 12 1 12s0 3.5.45 5.17a3 3 0 0 0 2.11 2.12c1.67.46 8.44.46 8.44.46s6.77 0 8.44-.46a3 3 0 0 0 2.11-2.12C23 15.5 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z" fill="currentColor"/></symbol>
+  <symbol id="i-airtel" viewBox="0 0 24 24"><path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9c0-4-3.2-7.2-7.2-7.2-3.1 0-5.6 2.5-5.6 5.6 0 2.5 2 4.6 4.6 4.6 2 0 3.7-1.7 3.7-3.7" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></symbol>
+  <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#/home" class="logo" aria-label="Mobilearn home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 5-7 4 4"/></svg>
+        </span>
+        Mobilearn
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#/home" data-nav>Home</a>
+        <a href="#/how" data-nav>How it works</a>
+        <a href="#/dashboard" data-nav id="navDashboard" style="display:none">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-layout"/></svg>
+          Dashboard
+        </a>
+        <a href="#/about" data-nav>About</a>
+        <a href="#/contact" data-nav>Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#/login" class="btn btn-ghost">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-log-in"/></svg>
+          Log in
+        </a>
+        <a href="#/signup" class="btn btn-primary">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-user-plus"/></svg>
+          Get started
+        </a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="icon icon-menu" viewBox="0 0 24 24"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#/home" data-nav><svg class="icon" viewBox="0 0 24 24"><use href="#i-layout"/></svg>Home</a>
+    <a href="#/how" data-nav><svg class="icon" viewBox="0 0 24 24"><use href="#i-info"/></svg>How it works</a>
+    <a href="#/dashboard" data-nav id="mobileDashboard" style="display:none"><svg class="icon" viewBox="0 0 24 24"><use href="#i-layout"/></svg>Dashboard</a>
+    <a href="#/about" data-nav><svg class="icon" viewBox="0 0 24 24"><use href="#i-info"/></svg>About</a>
+    <a href="#/contact" data-nav><svg class="icon" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Contact</a>
+    <a href="#/signup" class="btn btn-primary btn-block">Get started</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================================================================
+       PAGE: HOME
+  ================================================================ -->
+  <section class="page" data-page="home">
+
+    <div class="hero">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="glow glow-3"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="pill">
+              <span class="pill-dot"><svg class="icon" viewBox="0 0 24 24"><use href="#i-zap"/></svg></span>
+              <span><span class="pill-live"></span> <b>1,284 payouts</b> in the last 24h</span>
+            </div>
+            <h1>Watch YouTube.<br><span class="grad-text">Get paid</span> online.</h1>
+            <p class="hero-sub">Watch sponsored YouTube videos to the end and earn <b>UGX 1,900</b> per video. Submit your screenshot via WhatsApp for verification. Withdraw from UGX 20,000.</p>
+            <div class="hero-actions">
+              <a href="#/signup" class="btn btn-primary">
+                Create account
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>
+              </a>
+              <a href="#/how" class="btn btn-ghost">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-info"/></svg>
+                How it works
+              </a>
+            </div>
+            <div class="hero-trust">
+              <span><i class="check"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></i> YouTube only</span>
+              <span><i class="check"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></i> UGX 1,900 per video</span>
+              <span><i class="check"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></i> Airtel Uganda</span>
+            </div>
+          </div>
+
+          <div class="phone-wrap">
+            <div class="phone" role="img" aria-label="Mobilearn app preview">
+              <div class="phone-screen">
+                <div class="notch"></div>
+                <div class="ph-head">
+                  <div style="display:flex;align-items:center;gap:9px">
+                    <div class="ph-avatar">AK</div>
+                    <div class="ph-hi">Welcome back<b>Amara K.</b></div>
+                  </div>
+                  <svg class="icon" viewBox="0 0 24 24" style="color:#94a3b8"><use href="#i-wallet"/></svg>
+                </div>
+                <div class="ph-balance">
+                  <small>Available balance</small>
+                  <div class="amt">UGX 947,300</div>
+                  <div class="chg">
+                    <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-trending"/></svg>
+                    +UGX 23,750 this week
+                  </div>
+                  <div class="ph-chart" aria-hidden="true">
+                    <i style="height:38%"></i><i style="height:62%"></i><i style="height:46%"></i>
+                    <i style="height:78%"></i><i style="height:58%"></i><i style="height:92%"></i><i style="height:70%"></i>
+                  </div>
+                </div>
+                <div class="ph-label">Today's videos</div>
+                <div class="ph-task">
+                  <div class="ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg></div>
+                  <div class="tx"><b>Watch YouTube video</b><small>Full video · Video</small></div>
+                  <div class="pay">+UGX 1,900</div>
+                </div>
+                <div class="ph-task">
+                  <div class="ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-video"/></svg></div>
+                  <div class="tx"><b>Sponsored ad video</b><small>Full video · Video</small></div>
+                  <div class="pay">+UGX 1,900</div>
+                </div>
+                <div class="ph-task">
+                  <div class="ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-youtube"/></svg></div>
+                  <div class="tx"><b>Channel promo video</b><small>Full video · Video</small></div>
+                  <div class="pay">+UGX 1,900</div>
+                </div>
+                <div class="ph-bar"><div class="active">Home</div><div>Videos</div><div>Wallet</div><div>Chat</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="container">
+        <div class="strip-inner">
+          <div class="reveal"><div class="strip-num grad-text">180K+</div><div class="strip-lbl">Active members</div></div>
+          <div class="reveal"><div class="strip-num grad-text">UGX 16B+</div><div class="strip-lbl">Paid out</div></div>
+          <div class="reveal"><div class="strip-num grad-text">4.8/5</div><div class="strip-lbl">Avg rating</div></div>
+          <div class="reveal"><div class="strip-num grad-text">120+</div><div class="strip-lbl">Countries</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps. First payout fast.</h2>
+          <p>No interviews. No capital. Just a phone and YouTube.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="step-num"><svg class="icon" viewBox="0 0 24 24"><use href="#i-user-plus"/></svg></div>
+            <h3>Create account</h3>
+            <p>Username, Airtel number and password. Activate for UGX 19,500.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg></div>
+            <h3>Watch YouTube</h3>
+            <p>Watch sponsored videos to the end. Earn UGX 1,900 per completed video.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num"><svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg></div>
+            <h3>Withdraw</h3>
+            <p>Submit your Airtel merchant ID. Minimum UGX 20,000 payout.</p>
+          </article>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:36px">
+          <a href="#/how" class="btn btn-ghost">See full details</a>
+          <a href="#/signup" class="btn btn-primary">Create free account</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" style="padding-top:0">
+      <div class="container">
+        <div class="home-cta reveal">
+          <h2>Ready to start earning?</h2>
+          <p>Create your account in 60 seconds. Activate with UGX 19,500 via Airtel Merchant Code <b style="color:var(--primary);font-family:var(--mono);letter-spacing:.08em">7285061</b>. Then send your screenshot to WhatsApp for verification.</p>
+          <div class="hero-actions">
+            <a href="#/signup" class="btn btn-primary">Create account</a>
+            <a href="https://wa.me/256747943247" target="_blank" rel="noopener" class="btn btn-wa">
+              <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>
+              WhatsApp support
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================================================================
+       PAGE: HOW IT WORKS
+  ================================================================ -->
+  <section class="page" data-page="how">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">How it works</span>
+        <h1>From signup to payout</h1>
+        <p>Account, activation, YouTube videos and withdrawals — step by step.</p>
+      </div>
+
+      <div class="section">
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="step-num"><svg class="icon" viewBox="0 0 24 24"><use href="#i-user-plus"/></svg></div>
+            <h3>Create your account</h3>
+            <p>Enter a username, Airtel Uganda number and password. Takes under a minute.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num"><svg class="icon" viewBox="0 0 24 24"><use href="#i-lock"/></svg></div>
+            <h3>Activate it</h3>
+            <p>Pay UGX 19,500 via Airtel <b style="font-family:var(--mono)">*185*9#</b> with merchant code <span class="code-inline">7285061</span>.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg></div>
+            <h3>Watch &amp; withdraw</h3>
+            <p>Watch YouTube videos for UGX 1,900 each, send screenshots via WhatsApp, then withdraw from UGX 20,000.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0">
+        <div class="grid-2">
+          <div class="panel panel-accent reveal">
+            <div class="pay-note-title" style="color:var(--muted);justify-content:space-between">
+              <h3 style="margin:0;display:flex;align-items:center;gap:8px">
+                <svg class="icon" viewBox="0 0 24 24" style="color:var(--primary)"><use href="#i-lock"/></svg>
+                Activate — UGX 19,500
+              </h3>
+              <span class="airtel-logo">
+                <span class="airtel-badge">
+                  <svg class="icon" viewBox="0 0 24 24"><use href="#i-airtel"/></svg>
+                  <span class="word">airtel</span>
+                </span>
+              </span>
+            </div>
+            <p>One-time activation fee via Airtel Money. Airtel Uganda numbers only.</p>
+            <div class="merchant-box" style="background:#fff;border-color:#93c5fd;margin-top:16px;margin-bottom:0">
+              <span class="mb-label" style="color:var(--muted)">Merchant<br>Code</span>
+              <span class="mb-value" style="color:var(--primary-deep)">7285061</span>
+              <button type="button" class="mb-copy" data-copy="7285061" style="background:var(--primary);color:#fff">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#i-copy"/></svg>
+                Copy
+              </button>
+            </div>
+            <div class="pay-steps">
+              <div class="pay-step"><span class="pay-step-num">1</span><div><b>Dial <code>*185*9#</code></b><span class="desc">Opens Airtel Money</span></div></div>
+              <div class="pay-step"><span class="pay-step-num">2</span><div><b>Enter merchant code <code>7285061</code></b></div></div>
+              <div class="pay-step"><span class="pay-step-num">3</span><div><b>Confirm <code>MOBILE LABS</code> · pay <code>UGX 19,500</code></b></div></div>
+              <div class="pay-step"><span class="pay-step-num">4</span><div><b>Enter PIN to approve</b></div></div>
+            </div>
+            <div class="wa-box wa-box-compact" style="margin-top:14px;background:#fff;border-color:#bbf7d0">
+              <div class="wa-ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></div>
+              <div class="wa-tx"><b>Send activation screenshot</b><small>WhatsApp <code>+256 747 943 247</code></small></div>
+              <a href="https://wa.me/256747943247?text=Hi%20Mobilearn%2C%20here%20is%20my%20activation%20screenshot." target="_blank" rel="noopener" class="btn btn-wa">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>Send
+              </a>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg>Withdraw — from UGX 20,000</h3>
+            <p>Submit your Airtel merchant ID from the dashboard, then request payout.</p>
+            <div class="pay-steps">
+              <div class="pay-step"><span class="pay-step-num">1</span><div><b>Save your merchant ID</b><span class="desc">Dashboard → Payout details</span></div></div>
+              <div class="pay-step"><span class="pay-step-num">2</span><div><b>Tap Withdraw</b><span class="desc">Button on your balance card</span></div></div>
+              <div class="pay-step"><span class="pay-step-num">3</span><div><b>Enter amount (min UGX 20,000)</b><span class="desc">Paid to Airtel Money</span></div></div>
+              <div class="pay-step"><span class="pay-step-num">4</span><div><b>Payment sent to your merchant ID</b><span class="desc">Usually within 24 hours</span></div></div>
+            </div>
+            <ul class="list" style="margin-top:18px">
+              <li><span class="tick"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></span><span><b>Airtel Money</b> — only payout method</span></li>
+              <li><span class="tick"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></span><span><b>Merchant ID saved once</b>, reused for all payouts</span></li>
+              <li><span class="tick"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></span><span><b>Verified before payout</b>, usually within 24h</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0">
+        <div class="panel reveal" style="background:linear-gradient(150deg,#fef2f2,#fff7ed);border-color:#fecaca">
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px">
+            <div class="step-num" style="margin:0;background:linear-gradient(135deg,#dc2626,#ef4444)">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>
+            </div>
+            <div style="flex:1;min-width:200px">
+              <h3 style="margin:0;font-size:1.15rem">How YouTube rewards work</h3>
+              <p style="color:var(--muted);font-size:.9rem;margin-top:2px">Watch a published video to the end → screenshot → send on WhatsApp → earn UGX 1,900.</p>
+            </div>
+            <span class="video-reward" style="margin:0">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-dollar"/></svg>UGX 1,900 / video
+            </span>
+          </div>
+          <div class="pay-steps">
+            <div class="pay-step" style="background:#fff"><span class="pay-step-num">1</span><div><b>Open your dashboard</b><span class="desc">Pick a video from the Watch &amp; Earn list.</span></div></div>
+            <div class="pay-step" style="background:#fff"><span class="pay-step-num">2</span><div><b>Watch the sponsored video to the end</b><span class="desc">Do not skip — skipping restarts the video and cancels the reward.</span></div></div>
+            <div class="pay-step" style="background:#fff"><span class="pay-step-num">3</span><div><b>Screenshot the completed video</b><span class="desc">Take a screenshot showing the video finished.</span></div></div>
+            <div class="pay-step" style="background:#fff"><span class="pay-step-num">4</span><div><b>Send to WhatsApp <code>+256 747 943 247</code></b><span class="desc">Verification is shown in your dashboard.</span></div></div>
+          </div>
+          <div class="wa-box" style="margin-top:16px;background:#fff">
+            <div class="wa-ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></div>
+            <div class="wa-tx"><b>Submit YouTube screenshots</b><small>WhatsApp <code>+256 747 943 247</code></small></div>
+            <a href="https://wa.me/256747943247?text=Hi%20Mobilearn%2C%20here%20is%20my%20YouTube%20screenshot." target="_blank" rel="noopener" class="btn btn-wa">
+              <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>Open WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0;text-align:center">
+        <a href="#/signup" class="btn btn-primary">Create account</a>
+        <a href="#/login" class="btn btn-ghost" style="margin-left:10px">Log in to dashboard</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: SIGNUP
+  ================================================================ -->
+  <section class="page" data-page="signup">
+    <div class="signup">
+      <div class="container">
+        <div class="signup-grid">
+          <div class="signup-card">
+            <div class="signup-card-head">
+              <span class="eyebrow">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-user-plus"/></svg>Get started
+              </span>
+              <h1>Create your account</h1>
+              <p>Join Mobilearn in under a minute. Airtel Uganda numbers only.</p>
+            </div>
+
+            <form class="signup-form" id="signup" novalidate>
+              <div class="field">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="e.g. amara_k" autocomplete="username" required />
+              </div>
+              <div class="field">
+                <label for="phone">Airtel number</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0701234567" inputmode="tel" autocomplete="tel" required />
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Min 6 characters" autocomplete="new-password" required />
+                </div>
+                <div class="field">
+                  <label for="confirmPassword">Confirm</label>
+                  <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat password" autocomplete="new-password" required />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-user-plus"/></svg>Create account
+              </button>
+            </form>
+            <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+            <div class="signup-alt">Already have an account? <a href="#/login">Log in</a></div>
+            <div class="signup-foot">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-shield-check"/></svg>Secured by Mobilelabs UG · Airtel Uganda
+            </div>
+          </div>
+
+          <aside class="signup-aside">
+            <div class="aside-head">
+              <span class="aside-airtel">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#i-airtel"/></svg>Airtel Money · Uganda
+              </span>
+              <h3>Activation payment</h3>
+              <p>One-time fee to activate your earnings account.</p>
+            </div>
+            <div class="fee-grid">
+              <div class="fee-item"><span>Fee</span><b>UGX 19,500</b></div>
+              <div class="fee-item"><span>Merchant</span><b>MOBILE LABS</b></div>
+            </div>
+            <div class="merchant-box">
+              <span class="mb-label">Merchant<br>Code</span>
+              <span class="mb-value">7285061</span>
+              <button type="button" class="mb-copy" data-copy="7285061">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#i-copy"/></svg>Copy
+              </button>
+            </div>
+            <ol class="aside-steps">
+              <li><span class="step-n">1</span><div>Dial <b>*185*9#</b></div></li>
+              <li><span class="step-n">2</span><div>Enter merchant code <b>7285061</b></div></li>
+              <li><span class="step-n">3</span><div>Confirm <b>MOBILE LABS</b> · pay <b>UGX 19,500</b></div></li>
+              <li><span class="step-n">4</span><div>Enter your PIN to approve</div></li>
+            </ol>
+            <div class="aside-wa">
+              <div class="wa-ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></div>
+              <p>Send confirmation screenshot to <b>+256 747 943 247</b></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: LOG IN
+  ================================================================ -->
+  <section class="page" data-page="login">
+    <div class="section">
+      <div class="container">
+        <div class="auth-wrap">
+          <div class="auth-card reveal">
+            <h1>Welcome back</h1>
+            <p class="sub">Log in with your username or Airtel number to access your dashboard.</p>
+            <form class="form-stack" id="login" novalidate>
+              <input type="text" id="loginId" placeholder="Username or Airtel number" aria-label="Username or Airtel number" autocomplete="username" required />
+              <input type="password" id="loginPass" placeholder="Password" aria-label="Password" autocomplete="current-password" required />
+              <button type="submit" class="btn btn-primary btn-block">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-log-in"/></svg>Log in
+              </button>
+            </form>
+            <div class="auth-msg" id="loginMsg" role="status" aria-live="polite"></div>
+            <div class="auth-alt">New here? <a href="#/signup">Create an account</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: DASHBOARD
+  ================================================================ -->
+  <section class="page" data-page="dashboard">
+    <div class="container dash-container">
+
+      <div class="dash-head">
+        <div>
+          <span class="eyebrow">Dashboard</span>
+          <h1>Welcome back, <span id="dashUser">User</span></h1>
+          <p>
+            <span class="status-active" id="verifyStatus">Account active</span>
+            <span id="verifyText">Watch a full video to earn UGX 1,900</span>
+          </p>
+        </div>
+        <button type="button" class="btn btn-ghost" id="logoutBtn">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-log-out"/></svg>Log out
+        </button>
+      </div>
+
+      <!-- BALANCE -->
+      <div class="dash-balance-card">
+        <span class="dash-live"><i></i> Verified balance</span>
+        <small>Available balance</small>
+        <div class="dash-balance" id="dashBalance">UGX 0</div>
+        <div class="dash-balance-sub">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Watch a full video to earn UGX 1,900
+        </div>
+        <div class="dash-balance-actions">
+          <button type="button" class="dash-withdraw-btn" id="withdrawBtnTop">
+            <svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg>Withdraw funds
+          </button>
+        </div>
+      </div>
+
+      <!-- WATCH & EARN -->
+      <div class="dash-panel video-panel" style="margin-top:22px">
+        <div class="video-head">
+          <div>
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Watch &amp; Earn</h3>
+            <p class="sub">Pick a video below, watch it to the end, and earn the listed reward.</p>
+          </div>
+          <span class="video-reward" id="videoRewardBadge">
+            <svg class="icon" viewBox="0 0 24 24"><use href="#i-dollar"/></svg>+UGX 1,900
+          </span>
+        </div>
+        <div class="video-frame">
+          <div id="ytPlayer"></div>
+          <div class="placeholder" id="videoPlaceholder">Choose a video below to start earning.</div>
+        </div>
+        <div class="video-status" id="videoStatus">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>
+          Select a video to begin.
+        </div>
+        <div class="video-progress" id="videoProgress"><i></i></div>
+        <p class="video-guard">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-shield-check"/></svg>
+          Anti-skip protection is on. Skipping or fast-forwarding restarts the video — watch it to the end to earn.
+        </p>
+
+        <div class="video-list" id="videoListMember" style="margin-top:16px"></div>
+
+        <!-- WhatsApp verification -->
+        <div class="wa-box">
+          <div class="wa-ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></div>
+          <div class="wa-tx">
+            <b>Submit verification screenshot</b>
+            <small>Send the completed-video screenshot to WhatsApp <code>+256 747 943 247</code> for verification.</small>
+          </div>
+          <a href="https://wa.me/256747943247?text=Hi%20Mobilearn%2C%20here%20is%20my%20completed%20video%20screenshot." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>Send on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- PAYOUT DETAILS (merchant ID) -->
+      <div class="dash-panel merchant-section">
+        <div class="video-head">
+          <div>
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg>Payout details</h3>
+            <p class="sub">Submit your Airtel merchant ID so we can send you money.</p>
+          </div>
+          <span class="badge badge-new">Required</span>
+        </div>
+        <form id="merchantForm" novalidate style="display:flex;flex-direction:column;gap:10px;max-width:440px">
+          <input type="text" id="merchantInput" class="wd-input" placeholder="Airtel merchant ID (e.g. 0701234567)" style="margin-bottom:0" autocomplete="off" />
+          <button type="submit" class="btn btn-primary">
+            <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-check"/></svg>Save merchant ID
+          </button>
+        </form>
+        <div class="auth-msg" id="merchantMsg" role="status" aria-live="polite"></div>
+        <div id="merchantSaved" style="font-size:.86rem;color:var(--muted);margin-top:8px"></div>
+      </div>
+
+      <div style="height:40px"></div>
+    </div>
+
+    <!-- FLOATING WITHDRAW BUTTON -->
+    <button type="button" class="withdraw-fab" id="withdrawFab">
+      <svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg>Withdraw
+    </button>
+
+    <!-- WITHDRAW BUBBLE -->
+    <div class="withdraw-overlay" id="withdrawOverlay" role="presentation">
+      <div class="withdraw-bubble" role="dialog" aria-modal="true" aria-labelledby="withdrawTitle">
+        <div class="bubble-deco" style="width:60px;height:60px;top:-18px;right:26px"></div>
+        <div class="bubble-deco" style="width:30px;height:30px;bottom:44px;left:-8px"></div>
+        <div class="bubble-deco" style="width:20px;height:20px;top:32px;left:46px"></div>
+        <button type="button" class="bubble-close" id="bubbleClose" aria-label="Close">✕</button>
+        <div class="bubble-head">
+          <div class="bubble-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg></div>
+          <h3 id="withdrawTitle">Withdraw Funds</h3>
+          <p>Fill in your Airtel merchant ID. Minimum UGX 20,000.</p>
+        </div>
+        <form id="withdrawForm" novalidate>
+          <label class="wd-label" for="wdMerchantId">Airtel merchant ID</label>
+          <input id="wdMerchantId" class="wd-input" type="text" placeholder="e.g. 0701234567" autocomplete="off" />
+          <label class="wd-label" for="wdAmount">Amount (UGX · min 20,000)</label>
+          <input id="wdAmount" class="wd-input" type="number" min="20000" step="500" placeholder="e.g. 20000" />
+          <div class="wd-method">
+            <span>Payout method</span>
+            <span class="airtel-badge">
+              <svg class="icon" viewBox="0 0 24 24"><use href="#i-airtel"/></svg>
+              <span class="word">airtel money</span>
+            </span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top:4px">
+            <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-wallet"/></svg>Request Withdrawal
+          </button>
+        </form>
+        <div id="wdMsg" class="auth-msg" role="status" aria-live="polite"></div>
+        <p class="bubble-note">
+          <svg class="icon" viewBox="0 0 24 24"><use href="#i-info"/></svg>
+          You will receive payment after your merchant ID is verified.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: ABOUT
+  ================================================================ -->
+  <section class="page" data-page="about">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">About us</span>
+        <h1>Built for everyday earners</h1>
+        <p>Mobilearn is operated by Mobilelabs UG — a Ugandan company connecting people to simple, paid online work.</p>
+      </div>
+      <div class="section">
+        <div class="grid-2">
+          <div class="panel reveal">
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-zap"/></svg>Our mission</h3>
+            <p>Give anyone with an Airtel phone a fair way to earn. No CVs, no interviews, no capital — just sponsored YouTube videos that pay.</p>
+          </div>
+          <div class="panel reveal">
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-shield-check"/></svg>How we work</h3>
+            <p>We partner with verified brands and pay members directly for completed video views. Every payout is tracked in your dashboard and verified via WhatsApp.</p>
+          </div>
+        </div>
+        <div class="strip reveal" style="margin-top:22px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff">
+          <div class="strip-inner">
+            <div><div class="strip-num grad-text">180K+</div><div class="strip-lbl">Members</div></div>
+            <div><div class="strip-num grad-text">UGX 16B+</div><div class="strip-lbl">Paid out</div></div>
+            <div><div class="strip-num grad-text">120+</div><div class="strip-lbl">Countries</div></div>
+            <div><div class="strip-num grad-text">4.8/5</div><div class="strip-lbl">Rating</div></div>
+          </div>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:34px">
+          <a href="#/signup" class="btn btn-primary">Create account</a>
+          <a href="#/contact" class="btn btn-ghost">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: CONTACT
+  ================================================================ -->
+  <section class="page" data-page="contact">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">Contact</span>
+        <h1>We're here to help</h1>
+        <p>Questions about activation, YouTube videos or withdrawals? Reach out.</p>
+      </div>
+      <div class="section">
+        <div class="contact-grid">
+          <div class="panel reveal">
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Support</h3>
+            <div class="contact-item">
+              <div class="ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-mail"/></svg></div>
+              <div><b>Email</b><span>support@mobilelabs.ug</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="ic" style="background:#dcfce7;color:#128c7e"><svg class="icon" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></div>
+              <div>
+                <b>WhatsApp — screenshot verification</b>
+                <span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:4px">
+                  <a href="https://wa.me/256747943247" target="_blank" rel="noopener" style="color:var(--whatsapp-deep);font-weight:800;font-family:var(--mono)">+256 747 943 247</a>
+                  <span style="color:var(--muted);font-size:.82rem">· transaction &amp; video screenshots</span>
+                </span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-lock"/></svg></div>
+              <div>
+                <b>Activation — Airtel Money</b>
+                <span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:6px">
+                  <span class="airtel-logo"><span class="airtel-badge"><svg class="icon" viewBox="0 0 24 24"><use href="#i-airtel"/></svg><span class="word">airtel</span></span></span>
+                  <span>Dial <b style="font-family:var(--mono)">*185*9#</b> · Code <b style="font-family:var(--mono);letter-spacing:.08em;color:var(--primary-deep)">7285061</b></span>
+                </span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ic"><svg class="icon" viewBox="0 0 24 24"><use href="#i-clock"/></svg></div>
+              <div><b>Hours</b><span>Mon–Sat, 8:00am – 8:00pm EAT</span></div>
+            </div>
+          </div>
+          <div class="panel reveal">
+            <h3><svg class="icon" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Send a message</h3>
+            <form class="form-stack" id="contactForm" novalidate>
+              <input type="text" id="cName" placeholder="Your name" aria-label="Your name" required />
+              <input type="email" id="cEmail" placeholder="Your email" aria-label="Your email" required />
+              <textarea id="cMsg" placeholder="How can we help?" aria-label="Message" required></textarea>
+              <button type="submit" class="btn btn-primary btn-block">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Send message
+              </button>
+            </form>
+            <div class="auth-msg" id="contactMsg" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: LEGAL
+  ================================================================ -->
+  <section class="page" data-page="legal">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">Legal</span>
+        <h1>Terms, privacy &amp; payouts</h1>
+        <p>Short, plain-language summaries of how Mobilearn works.</p>
+      </div>
+      <div class="section" style="max-width:800px;margin-inline:auto">
+        <div class="panel">
+          <div class="legal-block">
+            <h2><svg class="icon" viewBox="0 0 24 24"><use href="#i-shield-check"/></svg>Terms of service</h2>
+            <p>Mobilearn is a platform operated by Mobilelabs UG for sponsored YouTube video rewards. Accounts are personal and may not be shared. <b>Signup is limited to Airtel Uganda mobile numbers.</b> One-time activation is UGX 19,500 via Airtel <b style="font-family:var(--mono)">*185*9#</b> using Merchant Code <b style="font-family:var(--mono);letter-spacing:.08em">7285061</b> (MOBILE LABS). Rewards are paid once per video per account and require the video to be watched in full. Skipping, fast-forwarding or automated viewing invalidates the reward. Misuse, fake screenshots or duplicate accounts may result in suspension.</p>
+          </div>
+          <div class="legal-block">
+            <h2><svg class="icon" viewBox="0 0 24 24"><use href="#i-lock"/></svg>Privacy policy</h2>
+            <p>We collect only what's needed to run your account: username, Airtel phone number and merchant ID. We never sell your data. Phone numbers and merchant IDs are used for verification and payouts only. Screenshots sent via WhatsApp are used solely to verify your video rewards and merchant ID.</p>
+          </div>
+          <div class="legal-block">
+            <h2><svg class="icon" viewBox="0 0 24 24"><use href="#i-wallet"/></svg>Payout policy</h2>
+            <p>Withdrawals are available from UGX 20,000 to Airtel Money only. You must save a valid Airtel merchant ID (via Dashboard → Payout details) before requesting a withdrawal. Withdrawals are verified before payout, usually within 24 hours. Video rewards require a valid screenshot sent to WhatsApp <b style="font-family:var(--mono)">+256 747 943 247</b>.</p>
+          </div>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:30px">
+          <a href="#/signup" class="btn btn-primary">Create account</a>
+          <a href="https://wa.me/256747943247" target="_blank" rel="noopener" class="btn btn-wa">
+            <svg class="icon icon-sm" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>Ask on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#/home" class="logo">
+          <span class="logo-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 5-7 4 4"/></svg></span>
+          Mobilearn
+        </a>
+        <p>Watch YouTube. Get paid. Withdraw from UGX 20,000 to Airtel Money.</p>
+        <div class="socials" style="margin-top:18px">
+          <a href="https://wa.me/256747943247" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></a>
+          <a href="#/contact" aria-label="Twitter"><svg class="icon" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><use href="#i-twitter"/></svg></a>
+          <a href="#/contact" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><use href="#i-instagram"/></svg></a>
+          <a href="#/contact" aria-label="YouTube"><svg class="icon" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><use href="#i-youtube"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Platform</h4>
+        <a href="#/home"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Home</a>
+        <a href="#/how"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>How it works</a>
+        <a href="#/signup"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Create account</a>
+        <a href="#/login"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Log in</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#/about"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>About</a>
+        <a href="#/contact"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Contact</a>
+        <a href="https://wa.me/256747943247" target="_blank" rel="noopener"><svg class="icon" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="#/legal"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Terms</a>
+        <a href="#/legal"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Privacy</a>
+        <a href="#/legal"><svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg>Payout policy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2025</span> Mobilearn. All rights reserved.</span>
+      <span class="powered">Powered by <b>Mobilelabs UG</b></span>
+    </div>
+  </div>
+</footer>
+
+<noscript>
+  <div style="padding:20px;text-align:center;background:#fef3c7;color:#92400e;font-weight:700">
+    JavaScript is required to use Mobilearn. Please enable it in your browser.
+  </div>
+</noscript>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================================================================
+     CONFIG
+  ================================================================ */
+  const ACTIVATION_FEE  = "UGX 19,500";
+  const AIRTEL_UG       = /^(\+?256|0)(70|74|75|76)\d{7}$/;
+  const VIDEO_REWARD_DEFAULT = 1900;
+  const MIN_WITHDRAWAL  = 20000;
+  const PAYOUT_METHOD   = "Airtel Money";
+  const WHATSAPP_NUM    = "256747943247";
+  const STORE_KEY       = "mobilearn.state.v5";
+  const VIDEO_KEY       = "mobilearn.videos.v1";
+  const MERCHANT_KEY    = "mobilearn.merchants.v1";
+  const MY_MERCHANT_KEY = "mobilearn.mymerchant.v1";
+  const CREDIT_KEY      = "mobilearn.credited.v1";
+  const PAYOUT_KEY      = "mobilearn.payouts.v1";
+  const SEED_FLAG       = "mobilearn.seeded.v1";
+
+  /* Watch guard tuning */
+  const POLL_MS         = 500;   // how often we sample the player
+  const SEEK_TOLERANCE  = 2.5;   // seconds of forward jump allowed before it's a skip
+  const DRIFT_LIMIT     = 5;     // cumulative seconds of extra time before it's fast-forwarding
+  const WATCH_RATIO     = 0.9;   // must genuinely watch 90% of the video
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, c => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+  ));
+  const fmt = n => "UGX " + Math.round(Number(n) || 0).toLocaleString("en-US");
+  const fmt2 = n => "UGX " + Number(n || 0).toLocaleString("en-US");
+
+  /* ================================================================
+     PERSISTENCE
+  ================================================================ */
+  const store = {
+    read() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || null; } catch (e) { return null; } },
+    write(d) { try { localStorage.setItem(STORE_KEY, JSON.stringify(d)); } catch (e) {} },
+    clear() { try { localStorage.removeItem(STORE_KEY); } catch (e) {} }
+  };
+
+  function getVideos() { try { return JSON.parse(localStorage.getItem(VIDEO_KEY)) || []; } catch (e) { return []; } }
+  function saveVideos(v) { try { localStorage.setItem(VIDEO_KEY, JSON.stringify(v)); } catch (e) {} }
+
+  function getMerchantList() { try { return JSON.parse(localStorage.getItem(MERCHANT_KEY)) || []; } catch (e) { return []; } }
+  function saveMerchantList(m) { try { localStorage.setItem(MERCHANT_KEY, JSON.stringify(m)); } catch (e) {} }
+  function getMyMerchantId() { try { return localStorage.getItem(MY_MERCHANT_KEY) || ""; } catch (e) { return ""; } }
+  function setMyMerchantId(v) { try { localStorage.setItem(MY_MERCHANT_KEY, v); } catch (e) {} }
+
+  function getCreditedVideos() { try { return JSON.parse(localStorage.getItem(CREDIT_KEY)) || []; } catch (e) { return []; } }
+  function markVideoCredited(id) {
+    const arr = getCreditedVideos();
+    if (!arr.includes(id)) { arr.push(id); try { localStorage.setItem(CREDIT_KEY, JSON.stringify(arr)); } catch (e) {} }
+  }
+  function isVideoCredited(id) { return getCreditedVideos().includes(id); }
+
+  function getPayouts() { try { return JSON.parse(localStorage.getItem(PAYOUT_KEY)) || []; } catch (e) { return []; } }
+  function savePayouts(p) { try { localStorage.setItem(PAYOUT_KEY, JSON.stringify(p)); } catch (e) {} }
+  function addPayoutRequest(username, merchantId, amount) {
+    const list = getPayouts();
+    list.unshift({
+      id: "p" + Date.now(),
+      username: username || "user",
+      merchantId: merchantId,
+      amountUGX: Number(amount) || 0,
+      status: "pending",
+      createdAt: Date.now()
+    });
+    savePayouts(list);
+  }
+
+  function submitMerchantId(username, merchantId) {
+    const list = getMerchantList();
+    const key = String(username || "").toLowerCase();
+    const existing = list.find(m => String(m.username || "").toLowerCase() === key);
+    if (existing) {
+      existing.merchantId = merchantId;
+      existing.updatedAt = Date.now();
+    } else {
+      list.push({
+        id: "m" + Date.now(),
+        username: username || "user",
+        merchantId: merchantId,
+        submittedAt: Date.now()
+      });
+    }
+    saveMerchantList(list);
+    setMyMerchantId(merchantId);
+  }
+
+  function seedData() {
+    try {
+      if (localStorage.getItem(SEED_FLAG)) return;
+      if (!getVideos().length) {
+        saveVideos([{
+          id: "v" + Date.now(),
+          videoId: "AWOXpzQzkp8",
+          title: "Sponsored video — watch to the end",
+          reward: 1900,
+          published: true,
+          createdAt: Date.now()
+        }]);
+      }
+      localStorage.setItem(SEED_FLAG, "1");
+    } catch (e) {}
+  }
+  seedData();
+
+  /* ================================================================
+     STICKY NAV + MOBILE MENU
+  ================================================================ */
+  const nav = document.getElementById("nav");
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("mobileMenu");
+  burger.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    burger.setAttribute("aria-expanded", String(!open));
+    burger.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+    menu.classList.toggle("open", !open);
+  });
+  function closeMenu() {
+    menu.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Open menu");
+  }
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+
+  /* ================================================================
+     AUTH STATE
+  ================================================================ */
+  let authorized = false;
+  let displayName = "User";
+
+  const navDashboard = document.getElementById("navDashboard");
+  const mobileDashboard = document.getElementById("mobileDashboard");
+
+  function setAuthorized(value, name) {
+    authorized = value;
+    if (name) displayName = name;
+    navDashboard.style.display = value ? "" : "none";
+    mobileDashboard.style.display = value ? "" : "none";
+    const el = document.getElementById("dashUser");
+    if (el) el.textContent = displayName;
+  }
+
+  /* ================================================================
+     ROUTER
+  ================================================================ */
+  const pages  = document.querySelectorAll(".page");
+  const routes = ["home", "how", "signup", "login", "dashboard", "about", "contact", "legal"];
+  const titles = {
+    home: "Watch YouTube. Get Paid.",
+    how: "How it works",
+    signup: "Create account",
+    login: "Log in",
+    dashboard: "Dashboard",
+    about: "About",
+    contact: "Contact",
+    legal: "Terms, Privacy & Payouts"
+  };
+
+  if (!location.hash) history.replaceState(null, "", "#/home");
+
+  function currentRoute() {
+    const raw = location.hash.replace(/^#\/?/, "").split("?")[0];
+    return routes.includes(raw) ? raw : "home";
+  }
+
+  function render() {
+    const route = currentRoute();
+
+    if (route === "dashboard" && !authorized) { location.hash = "#/login"; return; }
+
+    pages.forEach(page => page.classList.toggle("active", page.dataset.page === route));
+
+    document.querySelectorAll("[data-nav]").forEach(link => {
+      const isActive = link.getAttribute("href") === "#/" + route;
+      link.classList.toggle("active", isActive);
+      if (isActive) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+
+    document.title = titles[route] + " — Mobilearn";
+
+    const root = document.documentElement;
+    const prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    root.style.scrollBehavior = prev;
+
+    closeMenu();
+    initReveals();
+
+    if (route === "dashboard") {
+      paintDash();
+      renderMemberVideos();
+      paintMerchantBox();
+    }
+  }
+  window.addEventListener("hashchange", render);
+
+  /* ================================================================
+     SCROLL REVEAL
+  ================================================================ */
+  let observer = null;
+  function initReveals() {
+    const reveals = document.querySelectorAll(".page.active .reveal:not(.in)");
+    if (!("IntersectionObserver" in window)) { reveals.forEach(el => el.classList.add("in")); return; }
+    if (!observer) {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (!entry.isIntersecting) return;
+          const delay = (entry.target.dataset.delay || i * 70) % 350;
+          setTimeout(() => entry.target.classList.add("in"), delay);
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    }
+    reveals.forEach(el => observer.observe(el));
+  }
+
+  /* ================================================================
+     COPY MERCHANT CODE
+  ================================================================ */
+  document.querySelectorAll("[data-copy]").forEach(btn => {
+    btn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const code = btn.getAttribute("data-copy");
+      const original = btn.innerHTML;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(code);
+        } else {
+          const tmp = document.createElement("textarea");
+          tmp.value = code;
+          tmp.style.position = "absolute";
+          tmp.style.left = "-9999px";
+          document.body.appendChild(tmp);
+          tmp.select();
+          document.execCommand("copy");
+          document.body.removeChild(tmp);
+        }
+        btn.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg>Copied!';
+        btn.classList.add("copied");
+        setTimeout(() => { btn.innerHTML = original; btn.classList.remove("copied"); }, 1600);
+      } catch (err) {
+        btn.textContent = "Press Ctrl+C";
+        setTimeout(() => { btn.innerHTML = original; }, 1600);
+      }
+    });
+  });
+
+  /* ================================================================
+     BALANCE STATE
+  ================================================================ */
+  const saved = store.read();
+  let balance  = saved && typeof saved.balance === "number" ? saved.balance : 0;
+  let verified = saved && typeof saved.verified === "boolean" ? saved.verified : false;
+
+  function persist() { store.write({ balance, verified, name: displayName }); }
+
+  function paintDash() {
+    const b = document.getElementById("dashBalance");
+    if (b) b.textContent = fmt(balance);
+    updateVerifyChip();
+  }
+
+  function updateVerifyChip() {
+    const chip = document.getElementById("verifyStatus");
+    const txt  = document.getElementById("verifyText");
+    if (!chip || !txt) return;
+    if (verified) {
+      chip.textContent = "Verified"; chip.className = "status-active";
+      txt.textContent = "Your earnings are verified";
+    } else if (balance > 0) {
+      chip.textContent = "Pending verification"; chip.className = "status-active status-pending";
+      txt.textContent = "Send your screenshot to WhatsApp +256 747 943 247";
+    } else {
+      chip.textContent = "Account active"; chip.className = "status-active";
+      txt.textContent = "Watch a full video to earn " + fmt(VIDEO_REWARD_DEFAULT);
+    }
+  }
+
+  /* ================================================================
+     YOUTUBE PLAYER + ANTI-SKIP GUARD
+  ================================================================ */
+  let ytPlayer = null;
+  let ytApiReady = false;
+  let ytPending = null;
+  let currentVideo = null;
+
+  let watchMonitor = null;    // interval id
+  let lastTick = null;        // { time, wall }
+  let watchedSeconds = 0;     // genuine watch time accumulated
+  let drift = 0;              // cumulative "faster than real time" drift
+  let cheatDetected = false;
+
+  function loadYouTubeAPI(cb) {
+    if (ytApiReady) { cb(); return; }
+    ytPending = cb;
+    if (window.YT && window.YT.Player) { ytApiReady = true; cb(); return; }
+    if (!document.getElementById("ytApiScript")) {
+      const s = document.createElement("script");
+      s.id = "ytApiScript";
+      s.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(s);
+      window.onYouTubeIframeAPIReady = function () {
+        ytApiReady = true;
+        if (ytPending) { const fn = ytPending; ytPending = null; fn(); }
+      };
+    }
+  }
+
+  function setVideoStatus(html, cls) {
+    const el = document.getElementById("videoStatus");
+    if (!el) return;
+    el.innerHTML = html;
+    el.className = "video-status" + (cls ? " " + cls : "");
+  }
+
+  function updateRewardBadge() {
+    const badge = document.getElementById("videoRewardBadge");
+    if (!badge) return;
+    if (currentVideo) {
+      if (isVideoCredited(currentVideo.id)) {
+        badge.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg>Earned';
+        badge.classList.add("earned");
+      } else {
+        badge.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#i-dollar"/></svg>+' + fmt(currentVideo.reward);
+        badge.classList.remove("earned");
+      }
+    } else {
+      badge.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#i-dollar"/></svg>+' + fmt(VIDEO_REWARD_DEFAULT);
+      badge.classList.remove("earned");
+    }
+  }
+
+  /* ---------- watch progress bar ---------- */
+  function paintWatchProgress(ratio) {
+    const wrap = document.getElementById("videoProgress");
+    if (!wrap) return;
+    const on = !!currentVideo && !isVideoCredited(currentVideo.id);
+    wrap.classList.toggle("on", on);
+    const bar = wrap.querySelector("i");
+    if (bar) bar.style.width = Math.max(0, Math.min(100, ratio * 100)).toFixed(1) + "%";
+  }
+
+  /* ---------- monitor lifecycle ---------- */
+  function stopWatchMonitor() {
+    if (watchMonitor) { clearInterval(watchMonitor); watchMonitor = null; }
+  }
+
+  function resetWatchTracking() {
+    stopWatchMonitor();
+    lastTick = null;
+    watchedSeconds = 0;
+    drift = 0;
+    cheatDetected = false;
+    paintWatchProgress(0);
+  }
+
+  function startWatchMonitor() {
+    if (watchMonitor) return;
+    if (!ytPlayer || typeof ytPlayer.getCurrentTime !== "function") return;
+    lastTick = { time: ytPlayer.getCurrentTime(), wall: Date.now() };
+    watchMonitor = setInterval(tickWatch, POLL_MS);
+  }
+
+  function tickWatch() {
+    if (!ytPlayer || !currentVideo) return;
+    if (typeof ytPlayer.getCurrentTime !== "function") return;
+
+    const t   = ytPlayer.getCurrentTime();
+    const dur = typeof ytPlayer.getDuration === "function" ? (ytPlayer.getDuration() || 0) : 0;
+    const now = Date.now();
+
+    if (!lastTick) { lastTick = { time: t, wall: now }; return; }
+
+    const elapsed = (now - lastTick.wall) / 1000;
+    const delta   = t - lastTick.time;
+
+    /* Forward seek — user dragged the progress bar or clicked a chapter. */
+    if (delta > elapsed + SEEK_TOLERANCE) {
+      handleSkip("Skipping detected");
+      return;
+    }
+
+    if (delta < -1) {
+      /* Rewinding is allowed, but we don't count the rewound span twice. */
+      drift = 0;
+    } else if (delta > 0) {
+      drift += delta - elapsed;
+      /* Only credit genuine watch time (a small forward jump earns little). */
+      watchedSeconds += Math.min(delta, elapsed + 0.2);
+      if (drift > DRIFT_LIMIT) {
+        handleSkip("Fast-forwarding detected");
+        return;
+      }
+    }
+
+    lastTick = { time: t, wall: now };
+    paintWatchProgress(dur ? watchedSeconds / dur : 0);
+  }
+
+  function handleSkip(reason) {
+    stopWatchMonitor();
+    lastTick = null;
+    watchedSeconds = 0;
+    drift = 0;
+    cheatDetected = true;
+    paintWatchProgress(0);
+    try { ytPlayer.pauseVideo(); ytPlayer.seekTo(0, true); } catch (e) {}
+    setVideoStatus(
+      '<svg class="icon" viewBox="0 0 24 24"><use href="#i-shield-check"/></svg>' +
+      reason + ' — video restarted. Watch it to the end without skipping to earn ' +
+      fmt(currentVideo ? currentVideo.reward : VIDEO_REWARD_DEFAULT) + '.',
+      "paused"
+    );
+  }
+
+  /* ---------- player events ---------- */
+  function handleVideoState(e) {
+    if (!currentVideo || !window.YT || !YT.PlayerState) return;
+    const S = YT.PlayerState;
+
+    switch (e.data) {
+      case S.PLAYING:
+        startWatchMonitor();
+        setVideoStatus(
+          '<svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Playing… finish the video to earn ' +
+          fmt(currentVideo.reward) + '. Do not skip.',
+          "playing"
+        );
+        break;
+      case S.PAUSED:
+        stopWatchMonitor();
+        lastTick = null;
+        setVideoStatus('<svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Paused — keep watching to earn.', "paused");
+        break;
+      case S.ENDED:
+        stopWatchMonitor();
+        lastTick = null;
+        creditCurrentVideo();
+        break;
+      default:
+        /* buffering / cued / unstarted — pause the guard until playback resumes */
+        stopWatchMonitor();
+        lastTick = null;
+    }
+  }
+
+  function creditCurrentVideo() {
+    if (!currentVideo) return;
+
+    if (isVideoCredited(currentVideo.id)) {
+      setVideoStatus('<svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg>You already earned from this video.', "earned");
+      return;
+    }
+
+    const dur = (ytPlayer && typeof ytPlayer.getDuration === "function") ? (ytPlayer.getDuration() || 0) : 0;
+    const needed = dur > 0 ? Math.max(15, dur * WATCH_RATIO) : 15;
+
+    /* Anti-cheat: the video must have actually played through. */
+    if (watchedSeconds < needed) {
+      cheatDetected = true;
+      watchedSeconds = 0;
+      drift = 0;
+      paintWatchProgress(0);
+      try { ytPlayer.seekTo(0, true); } catch (e) {}
+      setVideoStatus(
+        '<svg class="icon" viewBox="0 0 24 24"><use href="#i-shield-check"/></svg>' +
+        'Video not watched in full — no reward was added. Watch it from the start without skipping.',
+        "paused"
+      );
+      return;
+    }
+
+    markVideoCredited(currentVideo.id);
+    balance += Number(currentVideo.reward) || 0;
+    verified = false;
+    paintDash();
+    persist();
+    paintWatchProgress(0);
+    setVideoStatus(
+      '<svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg>+' + fmt(currentVideo.reward) +
+      ' earned! Send your screenshot to WhatsApp for verification.',
+      "earned"
+    );
+    updateRewardBadge();
+    renderMemberVideos();
+  }
+
+  function ensurePlayer(video) {
+    currentVideo = video;
+    updateRewardBadge();
+    resetWatchTracking();
+
+    loadYouTubeAPI(() => {
+      if (ytPlayer && typeof ytPlayer.loadVideoById === "function") {
+        ytPlayer.loadVideoById(video.videoId);
+        return;
+      }
+      const frame = document.getElementById("ytPlayer");
+      if (!frame) return;
+      const ph = document.getElementById("videoPlaceholder");
+      if (ph) ph.style.display = "none";
+      ytPlayer = new YT.Player("ytPlayer", {
+        videoId: video.videoId,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1 },
+        events: { onStateChange: handleVideoState }
+      });
+    });
+  }
+
+  function loadMemberVideo(video) {
+    if (isVideoCredited(video.id)) {
+      currentVideo = video;
+      setVideoStatus('<svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg>You already earned from this video.', "earned");
+      ensurePlayer(video);
+      return;
+    }
+    currentVideo = video;
+    setVideoStatus(
+      '<svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Press play — finish the video to earn ' +
+      fmt(video.reward) + '.',
+      ""
+    );
+    ensurePlayer(video);
+    renderMemberVideos();
+    const frame = document.querySelector(".video-frame");
+    if (frame) frame.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  /* ================================================================
+     MEMBER VIDEO LIST
+  ================================================================ */
+  function renderMemberVideos() {
+    const container = document.getElementById("videoListMember");
+    if (!container) return;
+    const videos = getVideos().filter(v => v.published);
+    if (!videos.length) {
+      container.innerHTML = '<div class="empty-state">No videos available right now. Check back soon.</div>';
+      return;
+    }
+
+    container.innerHTML = videos.map(v => {
+      const credited = isVideoCredited(v.id);
+      const watching = !!currentVideo && currentVideo.id === v.id && !credited;
+      const cls = (credited ? "earned " : "") + (watching ? "watching" : "");
+
+      let btn;
+      if (credited) {
+        btn = `<button type="button" class="watch-btn earned" data-watch="${esc(v.id)}">
+                 <svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg>Earned
+               </button>`;
+      } else if (watching) {
+        btn = `<button type="button" class="watch-btn playing" data-watch="${esc(v.id)}">
+                 <svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Watching
+               </button>`;
+      } else {
+        btn = `<button type="button" class="watch-btn" data-watch="${esc(v.id)}">
+                 <svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg>Watch
+               </button>`;
+      }
+
+      return `
+        <div class="video-card ${cls}">
+          <div class="thumb-wrap">
+            <img class="thumb" src="https://i.ytimg.com/vi/${esc(v.videoId)}/mqdefault.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="meta">
+            <b>${esc(v.title)}</b>
+            <small>${credited ? "Reward earned" : "Reward"} <span class="reward">+${fmt(v.reward)}</span></small>
+          </div>
+          <div class="actions">${btn}</div>
+        </div>
+      `;
+    }).join("");
+
+    container.querySelectorAll("[data-watch]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const id = btn.getAttribute("data-watch");
+        const video = videos.find(v => v.id === id);
+        if (!video) return;
+
+        /* Same video already loaded — just bring the player into view, don't restart it. */
+        if (currentVideo && currentVideo.id === video.id) {
+          const frame = document.querySelector(".video-frame");
+          if (frame) frame.scrollIntoView({ behavior: "smooth", block: "center" });
+          return;
+        }
+        loadMemberVideo(video);
+      });
+    });
+  }
+
+  /* ================================================================
+     MERCHANT BOX (member)
+  ================================================================ */
+  function paintMerchantBox() {
+    const savedEl = document.getElementById("merchantSaved");
+    const input = document.getElementById("merchantInput");
+    const wdMerchantId = document.getElementById("wdMerchantId");
+    const val = getMyMerchantId();
+    if (savedEl) {
+      savedEl.textContent = val
+        ? "✅ Current merchant ID: " + val + " — payouts will go to this Airtel number."
+        : "";
+    }
+    if (input && !input.value) input.value = val;
+    if (wdMerchantId && !wdMerchantId.value) wdMerchantId.value = val;
+  }
+
+  const merchantForm = document.getElementById("merchantForm");
+  if (merchantForm) {
+    merchantForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const msg = document.getElementById("merchantMsg");
+      const input = document.getElementById("merchantInput");
+      if (!msg || !input) return;
+      msg.textContent = ""; msg.classList.remove("err");
+      const raw = input.value.trim();
+      const clean = raw.replace(/[\s\-()]/g, "");
+      if (!raw) { msg.textContent = "Enter your Airtel merchant ID."; msg.classList.add("err"); return; }
+      if (!AIRTEL_UG.test(clean)) {
+        msg.textContent = "Enter a valid Airtel number (e.g. 0701234567).";
+        msg.classList.add("err"); input.focus(); return;
+      }
+      submitMerchantId(displayName, clean);
+      msg.textContent = "✅ Merchant ID saved. You'll be paid to " + clean + ".";
+      paintMerchantBox();
+    });
+  }
+
+  /* ================================================================
+     LOGOUT
+  ================================================================ */
+  document.getElementById("logoutBtn").addEventListener("click", () => {
+    setAuthorized(false);
+    store.clear();
+    try { localStorage.removeItem(MY_MERCHANT_KEY); } catch (e) {}
+    location.hash = "#/home";
+  });
+
+  /* ================================================================
+     WITHDRAW BUBBLE
+  ================================================================ */
+  const withdrawFab     = document.getElementById("withdrawFab");
+  const withdrawBtnTop  = document.getElementById("withdrawBtnTop");
+  const withdrawOverlay = document.getElementById("withdrawOverlay");
+  const bubbleClose     = document.getElementById("bubbleClose");
+  const withdrawForm    = document.getElementById("withdrawForm");
+  const wdMerchantId    = document.getElementById("wdMerchantId");
+  const wdAmount        = document.getElementById("wdAmount");
+  const wdMsg           = document.getElementById("wdMsg");
+
+  function openWithdraw() {
+    wdMsg.textContent = ""; wdMsg.classList.remove("err");
+    if (!wdMerchantId.value) wdMerchantId.value = getMyMerchantId();
+    withdrawOverlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+    setTimeout(() => wdMerchantId.focus(), 250);
+  }
+  function closeWithdraw() {
+    withdrawOverlay.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  withdrawFab.addEventListener("click", openWithdraw);
+  if (withdrawBtnTop) withdrawBtnTop.addEventListener("click", openWithdraw);
+  bubbleClose.addEventListener("click", closeWithdraw);
+  withdrawOverlay.addEventListener("click", (e) => { if (e.target === withdrawOverlay) closeWithdraw(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && withdrawOverlay.classList.contains("open")) closeWithdraw(); });
+
+  withdrawForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    wdMsg.textContent = ""; wdMsg.classList.remove("err");
+
+    const merchantVal = wdMerchantId.value.trim();
+    if (!merchantVal) {
+      wdMsg.textContent = "Enter your Airtel merchant ID."; wdMsg.classList.add("err");
+      wdMerchantId.focus(); return;
+    }
+    if (!AIRTEL_UG.test(merchantVal.replace(/[\s\-()]/g, ""))) {
+      wdMsg.textContent = "Enter a valid Airtel number (e.g. 0701234567)."; wdMsg.classList.add("err");
+      wdMerchantId.focus(); return;
+    }
+
+    const amt = parseFloat(wdAmount.value);
+    if (!amt || isNaN(amt)) { wdMsg.textContent = "Enter a withdrawal amount."; wdMsg.classList.add("err"); wdAmount.focus(); return; }
+    if (amt < MIN_WITHDRAWAL) { wdMsg.textContent = "Minimum withdrawal is " + fmt(MIN_WITHDRAWAL) + "."; wdMsg.classList.add("err"); wdAmount.focus(); return; }
+    if (amt > balance) { wdMsg.textContent = "Amount exceeds your available balance of " + fmt(balance) + "."; wdMsg.classList.add("err"); return; }
+
+    const clean = merchantVal.replace(/[\s\-()]/g, "");
+
+    /* Persist payout details + queue the request. */
+    submitMerchantId(displayName, clean);
+    addPayoutRequest(displayName, clean, amt);
+
+    balance -= amt;
+    paintDash();
+    persist();
+
+    wdMsg.textContent = "✅ Withdrawal of " + fmt(amt) + " requested. You'll receive payment via " + PAYOUT_METHOD + " after your merchant ID (" + merchantVal + ") is verified.";
+    withdrawForm.reset();
+    paintMerchantBox();
+    setTimeout(closeWithdraw, 3200);
+  });
+
+  /* ================================================================
+     SIGNUP
+  ================================================================ */
+  const signupForm      = document.getElementById("signup");
+  const username        = document.getElementById("username");
+  const phone           = document.getElementById("phone");
+  const password        = document.getElementById("password");
+  const confirmPassword = document.getElementById("confirmPassword");
+  const formMsg         = document.getElementById("formMsg");
+
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formMsg.textContent = ""; formMsg.classList.remove("err");
+    const userVal    = username.value.trim();
+    const phoneVal   = phone.value.replace(/[\s\-()]/g, "");
+    const passVal    = password.value;
+    const confirmVal = confirmPassword.value;
+
+    if (!userVal || userVal.length < 3) { formMsg.textContent = "Username must be at least 3 characters."; formMsg.classList.add("err"); username.focus(); return; }
+    if (!AIRTEL_UG.test(phoneVal)) { formMsg.textContent = "Airtel Uganda numbers only (070, 074, 075 or 076 + 7 digits). Example: 0701234567."; formMsg.classList.add("err"); phone.focus(); return; }
+    if (!passVal || passVal.length < 6) { formMsg.textContent = "Password must be at least 6 characters."; formMsg.classList.add("err"); password.focus(); return; }
+    if (passVal !== confirmVal) { formMsg.textContent = "Passwords do not match."; formMsg.classList.add("err"); confirmPassword.focus(); return; }
+
+    formMsg.textContent = "✅ Account created! Pay " + ACTIVATION_FEE + " via *185*9# → 7285061 (MOBILE LABS). Then send your screenshot to WhatsApp +256 747 943 247 to activate.";
+    signupForm.reset();
+  });
+
+  /* ================================================================
+     LOGIN
+  ================================================================ */
+  const loginForm = document.getElementById("login");
+  const loginId   = document.getElementById("loginId");
+  const loginPass = document.getElementById("loginPass");
+  const loginMsg  = document.getElementById("loginMsg");
+
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    loginMsg.textContent = ""; loginMsg.classList.remove("err");
+    if (!loginId.value.trim()) { loginMsg.textContent = "Enter your username or Airtel number."; loginMsg.classList.add("err"); loginId.focus(); return; }
+    if (!loginPass.value || loginPass.value.length < 6) { loginMsg.textContent = "Enter your password (at least 6 characters)."; loginMsg.classList.add("err"); loginPass.focus(); return; }
+
+    const captured = loginId.value.trim();
+    loginMsg.textContent = "✅ Authorized. Opening your dashboard…";
+
+    setTimeout(() => {
+      setAuthorized(true, captured);
+      persist();
+      loginForm.reset();
+      loginMsg.textContent = "";
+      location.hash = "#/dashboard";
+    }, 550);
+  });
+
+  /* ================================================================
+     CONTACT FORM
+  ================================================================ */
+  const contactForm = document.getElementById("contactForm");
+  const cName       = document.getElementById("cName");
+  const cEmail      = document.getElementById("cEmail");
+  const cMsg        = document.getElementById("cMsg");
+  const contactMsg  = document.getElementById("contactMsg");
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    contactMsg.textContent = ""; contactMsg.classList.remove("err");
+    if (!cName.value.trim()) { contactMsg.textContent = "Please enter your name."; contactMsg.classList.add("err"); cName.focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(cEmail.value.trim())) { contactMsg.textContent = "Please enter a valid email address."; contactMsg.classList.add("err"); cEmail.focus(); return; }
+    if (!cMsg.value.trim()) { contactMsg.textContent = "Please write a message."; contactMsg.classList.add("err"); cMsg.focus(); return; }
+    contactMsg.textContent = "✅ Message sent — we'll reply within 24 hours.";
+    contactForm.reset();
+  });
+
+  /* ================================================================
+     BOOT
+  ================================================================ */
+  const session = store.read();
+  if (session && session.name) setAuthorized(true, session.name);
+
+  render();
+})();
+</script>
+</body>
+</html>
